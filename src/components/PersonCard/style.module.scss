@@ -1,0 +1,20 @@
+.person {
+  padding: $md-padding;
+  background-color: $light-gray;
+  color: $dark-gray;
+  border-radius: $radius;
+
+  & img {
+    width: 30px;
+    border-radius: $radius;
+  }
+
+  & svg {
+    width: 30px;
+  }
+}
+
+.manual {
+  color: $purple;
+  border: 1px solid $purple;
+}

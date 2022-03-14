@@ -1,0 +1,17 @@
+.transaction {
+  font-size: 1.2rem;
+
+  & svg {
+    width: 24px;
+  }
+
+  & .details {
+    & p {
+      color: $purple;
+    }
+
+    & span {
+      color: $dark-gray;
+    }
+  }
+}

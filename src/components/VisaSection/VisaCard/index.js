@@ -15,7 +15,9 @@ const VisaCard = () => (
           </span>
           <span className={style.text}>Visa</span>
         </div>
-
+        <div className={style.kebab__menu}>
+          <HiOutlineDotsVertical className={style.kebab} />
+        </div>
       </div>
 
 

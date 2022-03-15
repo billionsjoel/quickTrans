@@ -6,7 +6,15 @@ import VisaPill from './VisaSection/VisaPill';
 
 const Visa = () => (
   <div className={style.visa}>
-
+    <div className={style.heading}>
+      <div className={style.title}>
+        <h2>Your cards</h2>
+        <div className={style.visa_btn}>
+          <span className={style.text}>Add new</span>
+          <button type="button">+</button>
+        </div>
+      </div>
+    </div>
 
 
 

@@ -1,9 +1,8 @@
-import VisaPill from '../components/VisaPill';
+import Visa from '../components/Visa';
 
 const Dashboard = () => (
   <>
-    <VisaPill />
-    <div className="pill"> Helllooooooo how are you</div>
+    <Visa />
   </>
 );
 export default Dashboard;

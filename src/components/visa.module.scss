@@ -18,7 +18,11 @@
 		}
 	}
 
-
+	.title {
+		display: flex;
+		justify-content: space-between;
+		padding: $sm-padding;
+	}
 
 
 

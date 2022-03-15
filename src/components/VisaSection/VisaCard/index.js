@@ -13,6 +13,7 @@ const VisaCard = () => (
           <span className={style.icon}>
             <HiMap className={style.svg} />
           </span>
+          <span className={style.text}>Visa</span>
         </div>
 
       </div>

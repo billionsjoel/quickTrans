@@ -1,0 +1,133 @@
+@import '../../../sass/index.scss';
+
+button {
+  background-color: transparent;
+}
+
+svg {
+  background-color: $white;
+  border: none;
+  border-radius: 20%;
+  height: 2rem;
+  padding: 4px;
+  color: $purple;
+}
+
+.container {
+  background-color: $dark-gray;
+
+  & .card {
+    padding: 0.1rem 0.1rem 1rem 0.1rem;
+    border-radius: 8px;
+    width: 400px;
+    margin: 2rem auto;
+    color: $white;
+    background:
+      linear-gradient(
+        160deg,
+        rgb(13, 13, 13) 0%,
+        rgb(47, 52, 95) 35%,
+        rgb(213, 83, 88) 100%
+      );
+
+    & .card__info {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+
+      & .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.6rem;
+        opacity: 0.8;
+
+        & .icon {
+          transform: rotate(90deg);
+
+          & .svg {
+            background-color: transparent;
+            color: $white;
+            height: 2rem;
+            width: 2rem;
+          }
+        }
+
+        & .text {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 900;
+        }
+      }
+
+      & .kebab__menu {
+        opacity: 0.8;
+
+        & .kebab {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+
+    & .card__date {
+      margin-left: 14rem;
+      padding: 1.5rem;
+      opacity: 0.8;
+    }
+
+    & .card__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      opacity: 0.8;
+
+      & .currency {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+        & .figure {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $black;
+          padding: 0.3rem 0.5rem;
+          border-radius: 5px;
+          height: 1.5rem;
+          font-size: medium;
+
+          & .zeros {
+            font-size: x-small;
+            margin-top: 0.5rem;
+          }
+        }
+
+        & .type {
+          background-color: $black;
+          border-radius: 5px;
+          font-size: small;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.5rem;
+          height: 1rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      & .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        & > .svg__copy {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}

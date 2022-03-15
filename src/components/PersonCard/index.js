@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import style from './style.module.scss';
 
 const PersonCard = ({ img, name }) => (
@@ -20,4 +21,9 @@ const PersonCard = ({ img, name }) => (
     )}
   </>
 );
+
+PersonCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 export default PersonCard;

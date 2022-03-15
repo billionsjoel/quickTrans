@@ -1,17 +1,37 @@
+@import '../../sass/index.scss';
+
 .transaction {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: $md-padding;
+  }
+}
+
+.svgContainer {
+  padding: $md-padding;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $light-gray;
 
   & svg {
     width: 24px;
   }
+}
 
-  & .details {
-    & p {
-      color: $purple;
-    }
+.details {
+  & p {
+    color: $purple;
+  }
 
-    & span {
-      color: $dark-gray;
-    }
+  & span {
+    color: $dark-gray;
   }
 }

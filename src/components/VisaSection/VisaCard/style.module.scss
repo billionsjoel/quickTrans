@@ -63,6 +63,15 @@
 		opacity: 0.8;
 	}
 
+	& .card__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+		opacity: 0.8;
+
+
+		}
 	}
 }
 

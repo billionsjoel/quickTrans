@@ -5,5 +5,13 @@
 	width: 500px;
 	margin-bottom: 4rem;
 
+	& > hr {
+		width: 400px !important;
+		height: 1px;
+		background-color: $purple;
+		border: none;
+		margin: 4rem auto;
+		opacity: 0.5;
+	}
 
 

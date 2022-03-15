@@ -24,7 +24,16 @@
 		padding: $sm-padding;
 	}
 
+	.visa_btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 
+		& .text {
+			font-size: 0.8rem;
+		}
+	}
 
 
 }

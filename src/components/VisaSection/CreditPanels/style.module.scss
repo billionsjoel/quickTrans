@@ -28,6 +28,14 @@
 			align-items: center;
 			gap: 1.4rem;
 
+			& .progress {
+				background-color: $dark-gray;
+				color: $purple;
+				height: 4rem;
+				width: 4rem;
+				opacity: 0.7;
+			}
+
 
 
 	}

@@ -15,7 +15,7 @@ const Visa = () => (
         </div>
       </div>
     </div>
-
+    <VisaCard />
 
 
   </div>

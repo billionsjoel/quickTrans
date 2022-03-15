@@ -1,9 +1,8 @@
-import VisaPill from '../components/VisaPill';
+import Sidebar from '../components/Sidebar';
 
 const Dashboard = () => (
   <>
-    <VisaPill />
-    <div className="pill"> Helllooooooo how are you</div>
+    <Sidebar />
   </>
 );
 export default Dashboard;

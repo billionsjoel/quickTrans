@@ -22,5 +22,13 @@
 		width: 400px;
 		margin: 4rem auto;
 
+		& .bar__left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1.4rem;
 
+
+
+	}
 }

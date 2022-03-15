@@ -20,7 +20,14 @@ const VisaCard = () => (
         </div>
       </div>
       <div className={style.card__date}>04/25</div>
-
+      <div className={style.card__footer}>
+        <div className={style.currency}>
+          <span className={style.figure}>
+            245
+            <span className={style.zeros}>,000</span>
+          </span>
+          <span className={style.type}>USD</span>
+        </div>
 
       </div>
     </div>

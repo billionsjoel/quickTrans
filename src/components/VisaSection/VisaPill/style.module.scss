@@ -1,7 +1,7 @@
 @import '../../../sass/index.scss';
 
 .container {
-  background-color: $dark-gray;
+  background-color: $light-gray;
   margin: 1rem;
   position: relative;
 
@@ -18,7 +18,7 @@
     border-radius: 5px;
     position: absolute;
     top: -4px;
-    right: 2rem;
+    left: 26rem;
   }
 }
 
@@ -29,9 +29,9 @@
   padding: 2rem;
   border-radius: 8px;
   width: 400px;
-  margin: auto;
+  margin: 2rem;
   color: $purple;
-  background-color: $light-gray;
+  background-color: $dark-gray;
 
   & .currency {
     display: flex;

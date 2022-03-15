@@ -36,6 +36,17 @@
 				opacity: 0.7;
 			}
 
+			& .credit__limit {
+				& h6 {
+					font-size: 1rem;
+				}
+
+				& .curr {
+					margin: 1rem;
+					font-size: 0.8rem;
+				}
+			}
+		}
 
 
 	}

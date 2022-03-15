@@ -12,7 +12,10 @@ const VisaPill = () => (
         <span className={style.type}>USD</span>
       </div>
 
-
+      <div className={style.more}>
+        <span>...5460</span>
+        <RiVisaLine className={style.set} />
+      </div>
     </div>
 
   </div>

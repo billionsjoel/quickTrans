@@ -3,6 +3,7 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 import style from './style.module.scss';
+import 'react-circular-progressbar/dist/styles.css';
 
 function CreditPanel() {
   return (

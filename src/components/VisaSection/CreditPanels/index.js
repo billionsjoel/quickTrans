@@ -29,6 +29,7 @@ function CreditPanel() {
           </div>
         </div>
 
+        <HiChevronRight className={style.chev} />
       </div>
       <div className={style.bar}>
         <div className={style.bar__left}>

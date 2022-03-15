@@ -1,10 +1,10 @@
 @import '../../sass/utilities/variables';
 
 .sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex: 1;
-	background-color: $light-gray;
-	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  background-color: $light-gray;
+  height: 100vh;
 }

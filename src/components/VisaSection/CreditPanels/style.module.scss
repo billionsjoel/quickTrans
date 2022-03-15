@@ -1,55 +1,55 @@
 @import '../../../sass/index.scss';
 
 .container {
-	background-color: $light-gray;
-	width: 500px;
-	margin-bottom: 4rem;
+  background-color: $light-gray;
+  width: 500px;
+  margin-bottom: 4rem;
 
-	& > hr {
-		width: 400px !important;
-		height: 1px;
-		background-color: $purple;
-		border: none;
-		margin: 4rem auto;
-		opacity: 0.5;
-	}
+  & > hr {
+    width: 400px !important;
+    height: 1px;
+    background-color: $purple;
+    border: none;
+    margin: 4rem auto;
+    opacity: 0.5;
+  }
 
-	& .bar {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 400px;
-		margin: 4rem auto;
+  & .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 4rem auto;
 
-		& .bar__left {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 1.4rem;
+    & .bar__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem;
 
-			& .progress {
-				background-color: $light-gray;
-				color: $purple;
-				height: 4rem;
-				width: 4rem;
-				opacity: 0.7;
-			}
+      & .progress {
+        background-color: $light-gray;
+        color: $purple;
+        height: 4rem;
+        width: 4rem;
+        opacity: 0.7;
+      }
 
-			& .credit__limit {
-				& h6 {
-					font-size: 1rem;
-				}
+      & .credit__limit {
+        & h6 {
+          font-size: 1rem;
+        }
 
-				& .curr {
-					margin: 1rem;
-					font-size: 0.8rem;
-				}
-			}
-		}
+        & .curr {
+          margin: 1rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
 
-		& .chev {
-			background-color: transparent;
-			font-size: 2rem;
-		}
-	}
+    & .chev {
+      background-color: transparent;
+      font-size: 2rem;
+    }
+  }
 }

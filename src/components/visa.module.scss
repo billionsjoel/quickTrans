@@ -1,45 +1,45 @@
 @import '../sass/index.scss';
 
 .visa {
-	background-color: $light-gray;
-	color: $purple;
-	width: 500px;
-	height: 100vh;
-	flex: 2;
+  background-color: $light-gray;
+  color: $purple;
+  width: 500px;
+  height: 100vh;
+  flex: 2;
 
-	& .heading {
-		width: 400px;
-		margin: 3rem;
-		padding-top: 4rem;
+  & .heading {
+    width: 400px;
+    margin: 3rem;
+    padding-top: 4rem;
 
-		& .title {
-			display: flex;
-			justify-content: space-between;
-			padding: $sm-padding;
+    & .title {
+      display: flex;
+      justify-content: space-between;
+      padding: $sm-padding;
 
-			& > h2 {
-				font-weight: 300;
-			}
-		}
-	}
+      & > h2 {
+        font-weight: 300;
+      }
+    }
+  }
 
-	.visa_btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
+  .visa_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-		& .text {
-			font-size: 0.8rem;
-		}
-	}
+    & .text {
+      font-size: 0.8rem;
+    }
+  }
 
-	& button {
-		height: 2rem;
-		width: 2rem;
-		text-align: center;
-		border-radius: 30%;
-		border: none;
-		background-color: $white;
-	}
+  & button {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 30%;
+    border: none;
+    background-color: $white;
+  }
 }

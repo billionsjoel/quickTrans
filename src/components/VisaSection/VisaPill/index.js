@@ -17,7 +17,7 @@ const VisaPill = () => (
         <RiVisaLine className={style.set} />
       </div>
     </div>
-
+    <div className={style.notification}> 2 </div>
   </div>
 );
 export default VisaPill;

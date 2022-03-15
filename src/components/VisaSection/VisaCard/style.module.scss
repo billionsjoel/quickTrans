@@ -32,9 +32,11 @@
 			& .icon {
 				transform: rotate(90deg);
 
-				& svg {
+				& .svg {
 					background-color: transparent;
 					color: $white;
+					height: 2rem;
+					width: 2rem;
 				}
 			}
 
@@ -48,8 +50,9 @@
 		& .kebab__menu {
 			opacity: 0.8;
 
-			& svg {
+			& .kebab {
 				height: 1.5rem;
+				width: 1.5rem;
 			}
 		}
 	}
@@ -109,9 +112,11 @@
 
 			& button {
 				background-color: transparent;
-				& svg {
+				& .svg {
 					background-color: transparent;
 					color: $white;
+					height: 2rem;
+					width: 2rem;
 				}
 			}
 		}

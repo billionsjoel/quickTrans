@@ -22,4 +22,20 @@
 	}
 }
 
+.pill {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 8px;
+	width: 400px;
+	margin: auto;
+	color: $purple;
+	background-color: $light-gray;
 
+
+
+
+
+
+}

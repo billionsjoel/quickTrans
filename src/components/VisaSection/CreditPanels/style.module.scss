@@ -14,4 +14,13 @@
 		opacity: 0.5;
 	}
 
+	& .bar {
+		width: inherit;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 400px;
+		margin: 4rem auto;
 
+
+}

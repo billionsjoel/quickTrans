@@ -1,3 +1,4 @@
+import { RiVisaLine } from 'react-icons/ri';
 import style from './style.module.scss';
 
 const VisaPill = () => (

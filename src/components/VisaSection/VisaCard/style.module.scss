@@ -22,7 +22,30 @@
 		justify-content: space-between;
 		padding: 1rem;
 
+		& .logo {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 0.6rem;
+			opacity: 0.8;
 
+			& .icon {
+				transform: rotate(90deg);
+
+				& .svg {
+					background-color: transparent;
+					color: $white;
+					height: 2rem;
+					width: 2rem;
+				}
+			}
+
+			& .text {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 900;
+			}
+		}
 
 	}
 

@@ -6,7 +6,17 @@
 	width: 500px;
 	height: 100vh;
 
+	& .heading {
+		width: 400px;
+		margin: auto;
+		padding-top: 4rem;
 
+		& .title {
+			& > h2 {
+				font-weight: 300;
+			}
+		}
+	}
 
 
 

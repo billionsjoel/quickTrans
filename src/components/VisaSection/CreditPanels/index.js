@@ -1,6 +1,6 @@
 /* eslint-disable no-tabs */
 /* eslint-disable no-mixed-spaces-and-tabs */
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+
 import { HiChevronRight } from 'react-icons/hi';
 
 import style from './style.module.scss';

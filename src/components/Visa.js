@@ -1,6 +1,6 @@
 /* eslint-disable no-tabs */
 import style from './visa.module.scss';
-
+import CreditPanel from './VisaSection/CreditPanels';
 
 
 

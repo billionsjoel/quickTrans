@@ -19,6 +19,7 @@ const VisaCard = () => (
           <HiOutlineDotsVertical className={style.kebab} />
         </div>
       </div>
+      <div className={style.card__date}>04/25</div>
 
 
       </div>

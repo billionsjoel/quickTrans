@@ -29,6 +29,12 @@ const VisaCard = () => (
           <span className={style.type}>USD</span>
         </div>
 
+        <div className={style.more}>
+          <span>...5460</span>
+          <button type="button">
+            <HiOutlineDuplicate className={style.svg} />
+          </button>
+        </div>
       </div>
     </div>
   </div>

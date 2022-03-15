@@ -4,23 +4,14 @@ button {
   background-color: transparent;
 }
 
-svg {
-  background-color: $white;
-  border: none;
-  border-radius: 20%;
-  height: 2rem;
-  padding: 4px;
-  color: $purple;
-}
-
 .container {
-  background-color: $dark-gray;
+  background-color: $light-gray;
 
   & .card {
     padding: 0.1rem 0.1rem 1rem 0.1rem;
     border-radius: 8px;
     width: 400px;
-    margin: 2rem auto;
+    margin: 3rem;
     color: $white;
     background:
       linear-gradient(

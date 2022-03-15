@@ -38,8 +38,8 @@ function CreditPanel() {
             strokeWidth={50}
             styles={buildStyles({
 						  strokeLinecap: 'butt',
-						  pathColor: '#2f345f',
-						  trailColor: '#ebe6e6',
+						  pathColor: '#ebe6e6',
+						  trailColor: '#2f345f',
             })}
             className={style.progress}
           />

@@ -1,14 +1,15 @@
 @import '../sass/index.scss';
 
 .visa {
-  background-color: $dark-gray;
+  background-color: $light-gray;
   color: $purple;
   width: 500px;
   height: 100vh;
+  flex: 2;
 
   & .heading {
     width: 400px;
-    margin: auto;
+    margin: 3rem;
     padding-top: 4rem;
 
     & .title {

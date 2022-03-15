@@ -1,7 +1,7 @@
 @import '../../../sass/index.scss';
 
 .container {
-  background-color: $dark-gray;
+  background-color: $light-gray;
   width: 500px;
   margin-bottom: 4rem;
 
@@ -28,7 +28,7 @@
       gap: 1.4rem;
 
       & .progress {
-        background-color: $dark-gray;
+        background-color: $light-gray;
         color: $purple;
         height: 4rem;
         width: 4rem;

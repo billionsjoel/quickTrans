@@ -1,4 +1,8 @@
-
+import {
+  HiMap,
+  HiOutlineDotsVertical,
+  HiOutlineDuplicate,
+} from 'react-icons/hi';
 import style from './style.module.scss';
 
 const VisaCard = () => (

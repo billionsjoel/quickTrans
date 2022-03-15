@@ -12,16 +12,7 @@ function CreditPanel() {
       <hr />
       <div className={style.bar}>
         <div className={style.bar__left}>
-          <CircularProgressbar
-            value={60}
-            strokeWidth={50}
-            styles={buildStyles({
-						  strokeLinecap: 'butt',
-						  pathColor: '#2f345f',
-						  trailColor: '#ebe6e6',
-            })}
-            className={style.progress}
-          />
+         
           <div className={style.credit__limit}>
             <h6>Credit limit</h6>
             <span className={style.values}>500 / 1000</span>

@@ -31,7 +31,27 @@ function CreditPanel() {
 
         <HiChevronRight className={style.chev} />
       </div>
-     
+      <div className={style.bar}>
+        <div className={style.bar__left}>
+          <CircularProgressbar
+            value={20}
+            strokeWidth={50}
+            styles={buildStyles({
+						  strokeLinecap: 'butt',
+						  pathColor: '#2f345f',
+						  trailColor: '#ebe6e6',
+            })}
+            className={style.progress}
+          />
+          <div className={style.credit__limit}>
+            <h6>Credit limit</h6>
+            <span className={style.values}>320 / 1000</span>
+            <span className={style.curr}>EUR</span>
+          </div>
+        </div>
+
+        <HiChevronRight className={style.chev} />
+      </div>
     </div>
   );
 }

@@ -31,9 +31,7 @@ const VisaCard = () => (
 
         <div className={style.more}>
           <span>...5460</span>
-          <button type="button">
-            <HiOutlineDuplicate className={style.svg} />
-          </button>
+          <HiOutlineDuplicate className={style.svg__copy} />
         </div>
       </div>
     </div>

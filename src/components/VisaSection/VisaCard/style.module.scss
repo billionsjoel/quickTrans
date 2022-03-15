@@ -2,13 +2,6 @@
 
 button {
   background-color: transparent;
-
-  & .svg {
-    background-color: transparent;
-    color: $white;
-    height: 2rem;
-    width: 2rem;
-  }
 }
 
 svg {
@@ -129,6 +122,11 @@ svg {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+
+        & > .svg__copy {
+          height: 2rem;
+          width: 2rem;
+        }
       }
     }
   }

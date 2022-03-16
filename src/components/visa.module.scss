@@ -2,11 +2,10 @@
 
 .visa {
   color: $purple;
-  flex: 2;
 
   & .heading {
     margin: 3rem;
-    margin-top: 0;
+    width: 400px;
 
     & .title {
       display: flex;

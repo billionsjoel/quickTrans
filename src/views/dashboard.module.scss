@@ -2,12 +2,17 @@
 
 .dashboard {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 15% 85%;
   background-color: $light-gray;
 }
 
 .mainContainer {
   padding: $lg-padding;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 35% 65%;
+}
+
+.dashboardLine {
+  background-color: red !important;
+  z-index: 10000 !important;
 }

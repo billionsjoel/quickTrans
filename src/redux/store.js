@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import fakeReducer from './facade-users/fakeReducer';
+import reducer from './user/reducer';
 
-const store = configureStore({ reducer: fakeReducer });
+const store = configureStore({ reducer });
 
 export default store;

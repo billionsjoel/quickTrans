@@ -1,16 +1,16 @@
 @import '../../sass/utilities/variables';
 
 .button {
-	padding: $sm-padding;
-	background-color: transparent;
-	display: flex;
-	justify-content: space-around;
-	border: none;
-	width: 50%;
-	color: $purple;
-	font-size: 1rem;
+  padding: $sm-padding;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  width: 50%;
+  color: $purple;
+  font-size: 1rem;
 
-	span {
-		flex: 1;
-	}
+  span {
+    flex: 1;
+  }
 }

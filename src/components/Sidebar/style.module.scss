@@ -1,14 +1,14 @@
 @import '../../sass/utilities/variables';
 
 .sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: $light-gray;
-	height: 100vh;
-	border-right: 1px solid $dark-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $light-gray;
+  height: 100vh;
+  border-right: 1px solid $dark-gray;
 }
 
 .startlist {
-	font-size: 5rem;
+  font-size: 5rem;
 }

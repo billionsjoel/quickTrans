@@ -1,18 +1,18 @@
 @import '../sass/index.scss';
 
 .dashboard {
-	display: grid;
-	grid-template-columns: 15% 85%;
-	background-color: $light-gray;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  background-color: $light-gray;
 }
 
 .mainContainer {
-	padding: $lg-padding;
-	display: grid;
-	grid-template-columns: 35% 65%;
+  padding: $lg-padding;
+  display: grid;
+  grid-template-columns: 35% 65%;
 }
 
 .dashboardLine {
-	background-color: red !important;
-	z-index: 10000 !important;
+  background-color: red !important;
+  z-index: 10000 !important;
 }

@@ -1,9 +1,9 @@
 @import '../../sass/utilities/mixins';
 
 .list {
-	@include column;
+  @include column;
 
-	padding-left: 0;
-	list-style: none;
-	gap: 1em;
+  padding-left: 0;
+  list-style: none;
+  gap: 1em;
 }

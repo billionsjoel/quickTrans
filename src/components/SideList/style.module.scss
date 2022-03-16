@@ -3,7 +3,7 @@
 .list {
   @include column;
 
-  padding-left: 0;
+  justify-content: flex-start;
   list-style: none;
   gap: 1em;
 }

@@ -27,8 +27,8 @@ export const startlist = [
     text: 'Referrals',
   },
 ];
-export const endlist = [
 
+export const endlist = [
   {
     icon: <VscAccount />,
     text: 'Account',

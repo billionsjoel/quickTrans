@@ -4,16 +4,11 @@ import style from './style.module.scss';
 
 const SideList = ({ array }) => (
   <ul className={style.list}>
-    {
-        array.map(({ text, icon }) => (
-          <li key={text}>
-            <SideTile
-              text={text}
-              icon={icon}
-            />
-          </li>
-        ))
-      }
+    {array.map(({ text, icon }) => (
+      <li key={text}>
+        <SideTile text={text} icon={icon} />
+      </li>
+    ))}
   </ul>
 );
 

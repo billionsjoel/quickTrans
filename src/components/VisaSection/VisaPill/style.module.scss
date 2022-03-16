@@ -2,7 +2,7 @@
 
 .container {
   background-color: $light-gray;
-  margin: 1rem;
+  // margin: 1rem;
   position: relative;
 
   & .notification {
@@ -17,8 +17,8 @@
     font-size: x-small;
     border-radius: 5px;
     position: absolute;
-    top: -4px;
-    left: 26rem;
+    top: -0.5rem;
+    right: 0.5rem;
   }
 }
 
@@ -26,10 +26,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: $lg-padding;
   border-radius: 8px;
-  width: 400px;
-  margin: 2rem;
+  // width: 400px;
+  margin-bottom: 2rem;
   color: $purple;
   background-color: $dark-gray;
 

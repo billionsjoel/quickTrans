@@ -1,0 +1,64 @@
+@import '../../sass/index.scss';
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $light-gray;
+  color: $purple;
+
+  & h1 {
+    margin-bottom: 1rem;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: $lg-padding;
+    border-radius: $radius;
+    background-color: $white;
+  }
+
+  & input {
+    border-radius: 0.5rem;
+    padding: $md-padding;
+    border: 1px solid $purple;
+    color: $purple;
+    font-family: inherit;
+  }
+
+  & button {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: $md-padding;
+    background-color: $purple;
+    color: $white;
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  & p {
+    color: $dark-gray;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  & span {
+    cursor: pointer;
+    color: $purple;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

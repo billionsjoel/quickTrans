@@ -5,7 +5,9 @@ import History from '../components/History';
 
 const Dashboard = () => (
   <div className={style.dashboard}>
-    <Sidebar />
+    <div className={style.dashboardLine}>
+      <Sidebar />
+    </div>
     <main className={style.mainContainer}>
       <Visa />
       <History />

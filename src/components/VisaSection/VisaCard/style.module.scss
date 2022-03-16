@@ -15,12 +15,13 @@ button {
     width: 400px;
     margin-bottom: 3rem;
     color: $white;
-    background: linear-gradient(
-      160deg,
-      rgb(13, 13, 13) 0%,
-      rgb(47, 52, 95) 35%,
-      rgb(213, 83, 88) 100%
-    );
+    background:
+      linear-gradient(
+        160deg,
+        rgb(13, 13, 13) 0%,
+        rgb(47, 52, 95) 35%,
+        rgb(213, 83, 88) 100%
+      );
 
     & .card__info {
       display: flex;

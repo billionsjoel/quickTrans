@@ -2,8 +2,8 @@
 
 .list {
   @include column;
+  justify-content: flex-start;
 
-  padding-left: 0;
   list-style: none;
   gap: 1em;
 }

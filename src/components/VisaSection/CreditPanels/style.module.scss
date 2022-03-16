@@ -2,23 +2,22 @@
 
 .container {
   background-color: $light-gray;
-  width: 500px;
   margin-bottom: 4rem;
 
   & > hr {
-    width: 400px !important;
     height: 1px;
+    width: 90%;
     background-color: $purple;
     border: none;
-    margin: 4rem auto;
     opacity: 0.5;
+    margin: 0 auto;
+    margin-top: 3.5rem;
   }
 
   & .bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
     margin: 4rem auto;
 
     & .bar__left {

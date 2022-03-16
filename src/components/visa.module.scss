@@ -2,10 +2,12 @@
 
 .visa {
   color: $purple;
+  padding-right: $lg-padding;
 
   & .heading {
-    margin: 3rem;
-    width: 400px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    // width: 400px;
 
     & .title {
       display: flex;

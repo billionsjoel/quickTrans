@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import style from './style.module.scss';
@@ -12,16 +13,17 @@ const Auth = () => {
   const store = useSelector((reducer) => reducer);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleLogin = ({ email, pass }) => {
+  const handleLogin = async ({ email, pass }) => {
     if (!email.includes('@')) {
       setError('please enter a valid email');
       return;
     }
-
-    dispatch(login({ email, pass }));
+    await dispatch(login({ email, pass }));
+    navigate('/dashboard');
   };
-  const handleRegister = (data) => {
+  const handleRegister = async (data) => {
     if (!data.email.includes('@')) {
       setError('please enter a valid email');
       return;
@@ -32,7 +34,8 @@ const Auth = () => {
       return;
     }
 
-    dispatch(register(data));
+    await dispatch(register(data));
+    navigate('/dashboard');
   };
 
   const handleSubmit = (e) => {

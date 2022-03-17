@@ -5,7 +5,14 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import {
-  getFirestore, doc, setDoc, getDoc,
+  getFirestore,
+  doc,
+  setDoc,
+  getDoc,
+  query,
+  where,
+  collection,
+  getDocs,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -21,6 +28,7 @@ initializeApp(firebaseConfig);
 
 const ADD_ERROR = 'user/ADD_ERROR';
 const ADD_USER = 'user/ADD_USER';
+const SEND_MONEY = 'user/SEND_MONEY';
 
 const auth = getAuth();
 const db = getFirestore();
@@ -38,7 +46,7 @@ export const login = (payload) => async (dispatch) => {
 
     if (docSnap.exists()) {
       dispatch({ type: ADD_USER, payload: docSnap.data() });
-      window.location = '/dashboard';
+      // window.location = '/dashboard';
     } else {
       dispatch({ type: ADD_ERROR, payload: 'No data for this user' });
     }
@@ -59,15 +67,59 @@ export const register = (payload) => async (dispatch) => {
       email: payload.email,
       name: payload.name,
       amount: 10000,
+      history: [],
+      friends: [],
+      uid: resp.user.uid,
     };
 
     await setDoc(doc(db, 'users', resp.user.uid), data);
 
     dispatch({ type: ADD_USER, payload: data });
-
-    window.location = '/dashboard';
   } catch (error) {
     dispatch({ type: ADD_ERROR, payload: error.message });
+  }
+};
+
+export const sendMoney = (payload) => async (dispatch) => {
+  // update current user
+  const data = {
+    amount: payload.amount,
+    history: payload.history,
+    friends: payload.friends,
+  };
+
+  await setDoc(doc(db, 'users', payload.uid), data, { merge: true });
+
+  dispatch({ type: SEND_MONEY, payload: data });
+
+  // update the receiver
+  let receiver;
+  const docRef = collection(db, 'users');
+  const q = query(docRef, where('email', '==', payload.receiver));
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    receiver = doc.data();
+  });
+
+  console.log(receiver);
+
+  if (receiver.uid) {
+    receiver.amount += +payload.sentAmount;
+
+    if (!receiver.friends.includes(payload.email)) {
+      receiver.friends.push(payload.email);
+    }
+
+    receiver.history.unshift({
+      amount: payload.sentAmount,
+      description: payload.history[0].description,
+      received: true,
+      title: `Sent from (${payload.email})`,
+    });
+
+    console.log(receiver);
+
+    await setDoc(doc(db, 'users', receiver.uid), receiver, { merge: true });
   }
 };
 
@@ -80,6 +132,9 @@ export default (state = initialState, { type, payload }) => {
 
     case ADD_USER:
       return { user: payload };
+
+    case SEND_MONEY:
+      return { user: { ...state.user, ...payload } };
 
     default:
       return state;

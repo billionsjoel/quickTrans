@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import style from './style.module.scss';
 import Transaction from '../Transaction';
 import PersonCard from '../PersonCard';
+import TransactionModal from '../TransactionModal';
 
 const History = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const activities = [
     {
       receive: false,
@@ -50,9 +54,15 @@ const History = () => {
     <div className={style.history}>
       <h2>Quick Transaction</h2>
       <div className={style.carousel}>
-        <PersonCard name={false} img={false} />
+        {showModal && <TransactionModal friend="" hide={setShowModal} />}
+        <PersonCard name={false} img={false} show={setShowModal} />
         {peps.map((p) => (
-          <PersonCard key={p.name} name={p.name} img={p.img} />
+          <PersonCard
+            key={p.name}
+            name={p.name}
+            img={p.img}
+            show={setShowModal}
+          />
         ))}
       </div>
       <h2>Recent Activity</h2>
